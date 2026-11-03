@@ -1,0 +1,10 @@
+{
+  "name": "wh40k-stream-scoreboard",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22.18" },
+  "scripts": {
+    "test:engine": "node --test server/test/*.test.ts",
+    "test:stress": "STRESS_GAMES=5000 node --test server/test/invariants.test.ts"
+  }
+}
